@@ -1,13 +1,13 @@
 {
   "name": "angular2-webpack-seed",
-  "version": "1.2.0",
+  "version": "0.0.0",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 3000",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "test": "karma start",
     "lint": "tslint 'src/**/*.ts' --type-check --project tsconfig.json -e src/main-aot.ts",
     "aot": "rimraf aot && ngc -p tsconfig-aot.json",
-    "release": "npm version from-git && git push --follow-tags && npm publish"
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
   "keywords": [
     "angular",
